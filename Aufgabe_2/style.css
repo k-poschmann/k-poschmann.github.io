@@ -4,3 +4,44 @@ body{
     margin: 0 auto;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+header{
+    padding-top: 38px;
+}
+
+nav{
+    position: fixed;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 800px;
+    overflow: hidden;
+    border-radius: 5px;
+
+}
+
+li{
+    float: left;
+    background-color: #333333;
+}
+
+a.nav{
+    display: block;
+    padding: 10px;
+    color:  white;
+    text-decoration: none;
+}
+
+a.nav:hover{
+    background-color:#000000;
+    color: #d6ebad;
+}
+
+
+
+
+
+
