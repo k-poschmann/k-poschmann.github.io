@@ -9,6 +9,8 @@ header{
     padding-top: 38px;
 }
 
+/*------Navigationsleiste------*/
+
 nav{
     position: fixed;
 }
@@ -28,20 +30,40 @@ li{
     background-color: #333333;
 }
 
-a.nav{
+a{
     display: block;
     padding: 10px;
     color:  white;
     text-decoration: none;
 }
 
-a.nav:hover{
+
+a:visited{
+    color: white;
+}
+
+a:hover{
     background-color:#000000;
     color: #d6ebad;
 }
 
+a:active{
+    background-color: dimgrey;
+    color:white;
+}
+
+a.currentlink{
+    background-color: grey;
+    color: #000000;
+    font-weight: bold;
+}
 
 
+/*------Bildergalerie------*/
 
-
-
+a.pictures{
+    display: initial;
+}
+a.pictures:hover{
+    background-color: transparent;
+}
