@@ -59,11 +59,31 @@ a.currentlink{
 
 /*------Bildergalerie------*/
 
+h2{
+    color: white;
+    text-align: left;
+    padding-left: 70px;
+}
+.fotosection{   
+    background-color:#595959;
+    text-align: center;
+    height: 400px;
+    padding-top: 10px;
+}
+
 a.pictures{
     display: initial;
 }
 a.pictures:hover{
     background-color: transparent;
+}
+
+.videosection{   
+    background-color:#333333;
+    text-align: center;
+    height: 300px;
+    margin-top: 4px;
+    padding-top: 10px;
 }
 
 
@@ -76,7 +96,7 @@ h4{
 }
 
 .aboutmesection{
-    background-color: black;
+    background-color: #404040;
     width: 800px;
     height: 500px;
 }
@@ -97,5 +117,87 @@ img.portrait{
 
 
 /*-----Contact-----*/
+
+.contact{
+    height: 150px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+h1{
+    color:#333333;
+}
+
+a.facebook{
+    display: initial;
+}
+
+a.facebook:hover{
+    background-color: transparent;
+    opacity: 0.6;
+}
+
+a.instagram{
+    display: initial;
+}
+
+a.instagram:hover{
+    background-color: transparent;
+    opacity: 0.6;
+}
+
+.h2-contact{
+    padding-left: 0px;
+    color: white;
+}
+
+.formular{
+    margin-top: 4px;
+    background-color: #000000;
+    height: 350px;
+    padding: 10px 0px 0px 50px;
+}
+
+form{
+    width: 490px;
+}
+
+input{
+    width: 270px;
+    height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    font-size: 13px;
+    color: white;
+    background-color: darkgray;
+    padding-left: 20px;
+    margin-bottom: 5px;
+    border: 1px solid white;
+}
+
+textarea{
+    width: 370px;
+    height: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    padding-left: 20px;
+    background-color: darkgray;
+    border: 1px solid white;
+}
+
+.input-button{
+    width: 100px;
+    margin-top: 20px;
+    padding-left: 0;
+} 
+
+.input-button:hover{
+    color: #333333;
+}
+
+::placeholder{
+    color: white;
+}
+
 
 
