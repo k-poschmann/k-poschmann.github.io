@@ -5,7 +5,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
+/*-------------------------------------HEADER---------------------------------*/
 
 /*------Navigationsleiste------*/
 
@@ -56,7 +56,7 @@ a.currentlink{
 }
 
 
-/*------Bildergalerie------*/
+/*------BILDERGALERIE------*/
 
 h2{
     color: white;
@@ -77,6 +77,8 @@ a.pictures:hover{
     background-color: transparent;
 }
 
+/*------VIDEOGALERIE------*/
+
 .videosection{   
     background-color:#333333;
     text-align: center;
@@ -86,7 +88,10 @@ a.pictures:hover{
 }
 
 
-/*------About Me--------*/
+/*--------------------------------ABOUT ME--------------------------------*/
+
+
+/*-----Section-----*/
 
 h4{
     color:#d6ebad;
@@ -115,7 +120,9 @@ img.portrait{
 
 
 
-/*-----Contact-----*/
+/*----------------------------CONTACT-----------------------------*/
+
+/*-----Section Formular-----*/
 
 .contact{
     height: 150px;
@@ -125,24 +132,6 @@ img.portrait{
 
 h1{
     color:#333333;
-}
-
-a.facebook{
-    display: initial;
-}
-
-a.facebook:hover{
-    background-color: transparent;
-    opacity: 0.6;
-}
-
-a.instagram{
-    display: initial;
-}
-
-a.instagram:hover{
-    background-color: transparent;
-    opacity: 0.6;
 }
 
 .h2-contact{
@@ -181,6 +170,7 @@ textarea{
     padding-left: 20px;
     padding-top: 5px;
     background-color: darkgray;
+    color: white;
     border: 1px solid white;
 }
 
@@ -189,12 +179,26 @@ textarea{
     font-size: 12px;
 }
 
-.input-button{
+.linkdaten{
+    display: initial;
+    margin: 0;
+    padding: 0;
+    text-decoration: underline;
+}
+
+.linkdaten:hover{
+    color: white;
+}
+
+button{
     width: 100px;
-    padding-left: 0;
+    background-color: darkgray;
+    color: white;
+    border: none;
+    height: 30px;
 } 
 
-.input-button:hover{
+button:hover{
     color: #333333;
 }
 
@@ -202,6 +206,27 @@ textarea{
     color: white;
 }
 
+/*-----Social Media Icons------*/
 
+a.facebook{
+    display: initial;
+    text-align: center;
+}
+
+a.facebook:hover{
+    background-color: transparent;
+    opacity: 0.6;
+}
+
+a.instagram{
+    display: initial;
+    text-align: center;
+
+}
+
+a.instagram:hover{
+    background-color: transparent;
+    opacity: 0.6;
+}
 
 
