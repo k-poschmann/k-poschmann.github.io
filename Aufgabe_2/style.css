@@ -181,6 +181,7 @@ textarea{
 
 .linkdaten{
     display: initial;
+    color: white;
     margin: 0;
     padding: 0;
     text-decoration: underline;
@@ -192,7 +193,6 @@ textarea{
 
 button{
     width: 100px;
-    background-color: #000000;
     color: white;
     border: none;
     height: 30px;
