@@ -4,51 +4,50 @@ body{
 }
 
 #wrapper{
-    margin: 0 auto;
-    position: relative;
-    margin-top: 10.5%;
+    position: absolute;
+    left:50%;
+    top: 50%;
+    transform:  translate(-50%, -50%);
 }
 
-/*----------------------------------------------------------------- STATION 1-----------------------------------------------------------------------
+/*----------------------------------------------------------------- STATION 5-----------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 form{
-    width: 300px;
+    width: 50%;
     position: absolute;
-    bottom: 45px;
-    left: 370px;
+    bottom: 10%;
+    left: 7%;
     text-align: left;
     color: white;
 }
 
 .text{
-    margin-bottom: 5px;
+    margin-bottom: 2%;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 15px;
+    font-size: 0.9em;
 }
 
 input{
-    width: 200px;
-    height: 20px;
+    width: 65%;
     border-radius: 10px;
     border: 3px outset white;
 }
 
 textarea{
-    width: 200px;
+    width: 65%;
     height: 40px;
     border-radius: 10px;
     border: 3px outset white;
 }
 
 .radio{
-    width: 20px;
+    width: 10%;
 }
 
 button{
-    margin-top: 15px;
-    width: 100px;
-    height: 25px;
+    margin-top: 10%;
+    width: 40%;
     background-color: transparent;
     border: 2px inset white;
     color: mintcream;
@@ -60,8 +59,8 @@ button:hover{
 
 h1{
     position: absolute;
-    top: 30px;
-    left: 370px;
+    top: 7%;
+    left: 7%;
     color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }

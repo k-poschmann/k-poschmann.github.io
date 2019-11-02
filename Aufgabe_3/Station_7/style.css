@@ -4,15 +4,20 @@ body{
 }
 
 #wrapper{
-    margin: 0 auto;
-    position: relative;
-    margin-top: 10.5%;
+    position: absolute;
+    left:50%;
+    top: 50%;
+    transform:  translate(-50%, -50%);
 }
+
+/*----------------------------------------------------------------- STATION 7-----------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------*/
+
 
 h1{
     position: absolute;
-    top: 150px;
-    left: 370px;
+    top: 40%;
+    left: 7%;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 25px;
     color: white;
@@ -20,8 +25,8 @@ h1{
 
 p{
     position: absolute;
-    bottom: 70px;
-    left: 370px;
+    bottom: 20%;
+    left: 7%;
     text-align: left;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 14px;
@@ -31,36 +36,36 @@ p{
 
 .sterneins{
     position: absolute;
-    top: 130px;
-    left:440px
+    top: 30%;
+    left:18%;
 }
 
 .sternzwei{
     position: absolute;
-    top: 60px;
-    left:530px
+    top: 15%;
+    left:35%;
 }
 
 .sterndrei{
     position: absolute;
-    top: 100px;
-    right:560px;
+    top: 30%;
+    right:40%;
 }
 
 video{
     position: absolute;
-    right: 360px;
-    bottom: 30px;
+    right: 4%;
+    bottom: 7%;
 }
 
 .gift{
     position: absolute;
-    bottom: -15px;
-    right: 320px;
+    bottom: -5%;
+    right: 0;
 }
 
 .plant{
     position: absolute;
-    top: -50px;
-    left: 260px;
+    top: -15%;
+    left: -12%;
 }
