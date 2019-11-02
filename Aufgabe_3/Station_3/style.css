@@ -4,9 +4,10 @@ body{
 }
 
 #wrapper{
-    margin: 0 auto;
-    position: relative;
-    margin-top: 10.5%;
+    position: absolute;
+    left:50%;
+    top: 50%;
+    transform:  translate(-50%, -50%);
 }
 
 /*----------------------------------------------------------------- STATION 3-----------------------------------------------------------------------
@@ -15,8 +16,8 @@ body{
 
 .star_one{
     position: absolute;
-    bottom: 130px;
-    left: 390px;
+    bottom: 15%;
+    left: 10%;
 
 }
 
@@ -27,8 +28,8 @@ body{
 
 .star_two{
     position: absolute;
-    top: 140px;
-    left: 490px;
+    top: 40%;
+    left: 25%;
 }
 
 .star_two:hover{
@@ -37,8 +38,8 @@ body{
 
 .star_three{
     position: absolute;
-    bottom: 60px;
-    right: 620px;
+    bottom: 20%;
+    right: 40%;
 
 }
 
@@ -47,8 +48,8 @@ body{
 }
 .star_four{
     position: absolute;
-    top: 200px;
-    right: 440px;
+    top: 40%;
+    right: 20%;
 
 }
 .star_four:hover{
@@ -57,8 +58,8 @@ body{
 
 h1{
     position: absolute;
-    top: 50px;
-    left: 390px;
+    top: 10%;
+    left: 10%;
     text-align: left;
     color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
