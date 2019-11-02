@@ -1,0 +1,28 @@
+body{
+    background-image: url(img/bg.png);
+    text-align: center;
+}
+
+#wrapper{
+    margin: 0 auto;
+    position: relative;
+    margin-top: 10.5%;
+}
+
+
+/*----------------------------------------------------------------- STATION 8-----------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+iframe{
+    position: absolute;
+    left: 380px;
+    top: 50px;
+    width: 500px;
+    height: 300px;
+}
+
+.banderole{
+    position: absolute;
+    right: 330px;
+    bottom: 10px;
+}

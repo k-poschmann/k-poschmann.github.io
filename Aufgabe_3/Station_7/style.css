@@ -1,0 +1,66 @@
+body{
+    background-image: url(img/bg.png);
+    text-align: center;
+}
+
+#wrapper{
+    margin: 0 auto;
+    position: relative;
+    margin-top: 10.5%;
+}
+
+h1{
+    position: absolute;
+    top: 150px;
+    left: 370px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    color: white;
+}
+
+p{
+    position: absolute;
+    bottom: 70px;
+    left: 370px;
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    line-height: 30px;
+    color: white;
+}
+
+.sterneins{
+    position: absolute;
+    top: 130px;
+    left:440px
+}
+
+.sternzwei{
+    position: absolute;
+    top: 60px;
+    left:530px
+}
+
+.sterndrei{
+    position: absolute;
+    top: 100px;
+    right:560px;
+}
+
+video{
+    position: absolute;
+    right: 360px;
+    bottom: 30px;
+}
+
+.gift{
+    position: absolute;
+    bottom: -15px;
+    right: 320px;
+}
+
+.plant{
+    position: absolute;
+    top: -50px;
+    left: 260px;
+}

@@ -1,0 +1,67 @@
+body{
+    background-image: url(img/bg.png);
+    text-align: center;
+}
+
+#wrapper{
+    margin: 0 auto;
+    position: relative;
+    margin-top: 10.5%;
+}
+
+/*----------------------------------------------------------------- STATION 3-----------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+.star_one{
+    position: absolute;
+    bottom: 130px;
+    left: 390px;
+
+}
+
+.star_one:hover{
+    background-image: url(img/stern_hover.png);
+}
+
+
+.star_two{
+    position: absolute;
+    top: 140px;
+    left: 490px;
+}
+
+.star_two:hover{
+    background-image: url(img/stern_hover.png);
+}
+
+.star_three{
+    position: absolute;
+    bottom: 60px;
+    right: 620px;
+
+}
+
+.star_three:hover{
+    background-image: url(img/stern_hover.png);
+}
+.star_four{
+    position: absolute;
+    top: 200px;
+    right: 440px;
+
+}
+.star_four:hover{
+    background-image: url(img/stern_hover.png);
+}
+
+h1{
+    position: absolute;
+    top: 50px;
+    left: 390px;
+    text-align: left;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    line-height: 40px;
+}

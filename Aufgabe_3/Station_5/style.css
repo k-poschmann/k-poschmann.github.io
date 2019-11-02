@@ -1,0 +1,67 @@
+body{
+    background-image: url(img/bg.png);
+    text-align: center;
+}
+
+#wrapper{
+    margin: 0 auto;
+    position: relative;
+    margin-top: 10.5%;
+}
+
+/*----------------------------------------------------------------- STATION 1-----------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+form{
+    width: 300px;
+    position: absolute;
+    bottom: 45px;
+    left: 370px;
+    text-align: left;
+    color: white;
+}
+
+.text{
+    margin-bottom: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+
+input{
+    width: 200px;
+    height: 20px;
+    border-radius: 10px;
+    border: 3px outset white;
+}
+
+textarea{
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    border: 3px outset white;
+}
+
+.radio{
+    width: 20px;
+}
+
+button{
+    margin-top: 15px;
+    width: 100px;
+    height: 25px;
+    background-color: transparent;
+    border: 2px inset white;
+    color: mintcream;
+}
+
+button:hover{
+    background-color: cornflowerblue;
+}
+
+h1{
+    position: absolute;
+    top: 30px;
+    left: 370px;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}

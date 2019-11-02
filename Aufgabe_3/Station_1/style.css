@@ -1,0 +1,45 @@
+body{
+    background-image: url(img/bg.png);
+    text-align: center;
+}
+
+#wrapper{
+    margin: 0 auto;
+    position: relative;
+    margin-top: 10.5%;
+}
+
+/*----------------------------------------------------------------- STATION 1-----------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.pinguin{
+    position: absolute;
+    bottom: -20px;
+    right: 310px;
+}
+
+.busch{
+    position: absolute;
+    top: -70px;
+    left: 260px;
+}
+
+h1{
+    position: absolute;
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    top: 50px;
+    left: 395px;
+}
+
+p{
+    position: absolute;
+    top: 200px;
+    left: 395px;
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 18px;
+    line-height: 35px;
+}

@@ -1,0 +1,53 @@
+
+body{
+    background-image: url(bg.png);;
+}
+
+nav{ 
+    margin-left: 150px;
+    margin-top: 260px;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+li{
+    float: left;
+    margin-left: 30px;
+    /*border-style: inset;*/
+}
+
+a{
+    display: block;
+    padding: 20px 40px;
+    text-decoration: none;
+    color: white;
+    background-color: #004d00;
+    border:5px outset #001a00;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a:visited{
+    color: white;
+}
+
+a:hover{
+    border: 5px inset #660000;
+    background-color: darkred;
+    color: white;
+}
+
+
+.topleft{
+    position: absolute;
+    top: 100px;
+}
+
+.topright{
+    position: absolute;
+    top: 100px;
+    right:120px;
+}
