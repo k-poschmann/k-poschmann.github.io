@@ -7,8 +7,12 @@ body{
 #wrapper{
     width: 100%;
 }
-/*------Alle Seiten-------*/
+/*--------------- Mobile --------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------*/
+
 @media screen and (max-width:600px){
+
+/*------Alle Seiten-------*/
 
 
 .title{
@@ -157,7 +161,8 @@ p{
 }
 }
 
-/*--------------- Desktop ----------------*/
+/*--------------- Desktop --------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------*/
 
 @media screen and (min-width: 600px){
 body{
@@ -169,11 +174,20 @@ body{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     }
+    
+.title{
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    width: 90%;
+    font-size: 1em;
+        
+}
 
 .title2{
     position: absolute;
     width: 90%;
-    top: 15%;
+    top: 20%;
     left: 5%;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
@@ -181,13 +195,133 @@ body{
 }
 
 .button{
-    display: none;
+    position: absolute;
+    width: 90%;
+    top: 70%;
+    left: 5%;
+    text-align: center;
+}
+
+#wrapper1 .button a{
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 3% 6% 3% 6%;
+    background-color: cornflowerblue;
+    border: 5px inset darkslateblue;
+}
+
+#wrapper1 .button a:hover{
+    border: 5px outset darkslateblue;
+    background-color: midnightblue;
+    color: white;
 }
 
 .desktop{
     color: darkblue;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+}
+
+/*Fragen*/
+
+.hoverpic{
+    position: relative;
+    width: 100%;
+    height: 90px;
+    background: url(img/answer.png);
+    background-size:  100%;
+    background-repeat: no-repeat;
+}
+
+.hoverpic:hover{
+    background-image: url(img/answer_over.png);
+
+}
+
+#wrapper a{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 1em;
+    text-decoration: none;
+    position: absolute;
+    left:50%;
+    top: 55%;
+    transform:  translate(-50%, -50%);
+    display: block;
+    width: 65%;
+    padding: 1% 0 1% 0;
+}
+span{
+    font-weight: bold;
+    margin-right: 2%;
+}
+.fiftyfifty{
+    position: absolute;
+    bottom: -10%;
+    left: 35%
+}
+
+.telefon{
+    position: absolute;
+    bottom: -10%;
+    right: 35%;
+}
+
+.question{
+    position: absolute;
+    width: 90%;
+    top: 8%;
+    left: 5%;
+    text-align: center;
+    color: white;
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*------2. FRAGE / 3. FRAGE-------*/
+.question2{
+    position: absolute;
+    width: 90%;
+    top: 8%;
+    left: 5%;
+    text-align: center;
+    color: white;
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+    position: absolute;
+    top: 40%;
+    left: 37%;
+    text-align: center;
+    color:darkblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+#wrapper2 .buttonwinner{
+    position: absolute;
+    width: 90%;
+    top: 65%;
+    left: 5%;
+    text-align: center;
+}
+
+.buttonwinner a{
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 3% 6% 3% 6%;
+    background-color: cornflowerblue;
+    border: 5px inset darkslateblue;
+}
+
+.buttonwinner a:hover{
+    border: 5px outset darkslateblue;
+    background-color: midnightblue;
+    color: white;
 }
 
 }
