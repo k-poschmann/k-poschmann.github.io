@@ -24,32 +24,38 @@ var total2008:number = emissionAfrica2008 + emissionSouthAmerica2008 + emissionE
 
 //Prozente Afrika
 var percentAf:number = emissionAfrica2018*100/total2018;
+
 var percentAf2:number = emissionAfrica2018-emissionAfrica2008;
 var percentAf3:number = percentAf2/emissionAfrica2008*100;
 
 //Prozente Süd Amerika
 var percentSA:number = emissionSouthAmerica2018*100/total2018;
+
 var percentSA2:number = emissionSouthAmerica2018-emissionSouthAmerica2008;
 var percentSA3:number = percentSA2/emissionSouthAmerica2008*100;
 
 //Prozente Europa
 var percentEu:number = emissionEuropa2018*100/total2018;
+
 //var percentEu2:number = ((emissionEuropa2008/emissionEuropa2018)^(1/10))*100;
 var percentEu2:number = emissionEuropa2018-emissionEuropa2008;
 var percentEu3:number = percentEu2/emissionEuropa2008*100;
 
 //Prozente Nord Amerika
 var percentNA:number = emissionNorthAmerica2018*100/total2018;
+
 var percentNA2:number = emissionNorthAmerica2018-emissionNorthAmerica2008;
 var percentNa3:number = percentNA2/emissionNorthAmerica2008*100;
 
 //Prozente Asien
 var percentAsia:number = emissionAsia2018*100/total2018;
+
 var percentAsia2:number = emissionAsia2018-emissionAsia2008;
 var percentAsia3:number = percentAsia2/emissionAsia2008*100;
 
 //Prozente Australien
 var percentAus:number = emissionAustralia2018*100/total2018;
+
 var percentAus2:number = emissionAustralia2018-emissionAustralia2008;
 var percentAus3:number = percentAus2/emissionAustralia2008*100;
 
