@@ -37,7 +37,6 @@ var percentSA3:number = percentSA2/emissionSouthAmerica2008*100;
 //Prozente Europa
 var percentEu:number = emissionEuropa2018*100/total2018;
 
-//var percentEu2:number = ((emissionEuropa2008/emissionEuropa2018)^(1/10))*100;
 var percentEu2:number = emissionEuropa2018-emissionEuropa2008;
 var percentEu3:number = percentEu2/emissionEuropa2008*100;
 
@@ -74,11 +73,11 @@ var endAustralia:number = emissionAustralia2018-emissionAustralia2008;
 
 var a:string="Die Emmission von ";
 var b:string="ist: ";
-var c:string=" kg CO2.";
+var c:string=" kg CO2. ";
 var d:string="Relativ zur Gesamtemission der Welt verursacht ";
 var e:string="damit ";
-var f:string=" %. ";
-var g:string="Für ";
+var f:string="%";
+var g:string=". Für ";
 var h:string="hat sich 2018 im Vergleich zu 2008 die Emission um ";
 var i:string=" verändert. ";
 var j:string="2018 im Vergleich zu 2008 sind das ";
@@ -98,3 +97,21 @@ console.log(a + Europe + b + emissionEuropa2018 + c + d + Europe + e + percentEu
 console.log(a + NorthAmerica + b + emissionNorthAmerica2018 + c + d + NorthAmerica + e + percentNA + f + g + NorthAmerica + h + percentNa3 + f + i + j + endNorthAmerica + c );
 console.log(a + Asia + b + emissionAsia2018 + c + d + Asia + e + percentAsia + f + g + Asia + h + percentAsia3 + f + i + j + endAsia + c) ;
 console.log(a + Australia + b + emissionAustralia2018 + c + d + Australia + e + percentAus + f + g + Australia + h + percentAus3 + f + i + j + endAustralia + c);
+
+
+
+/*Tutorium
+
+var inhalt:HTMLElement=document.getElementById("inhalt");
+inhalt inner.Text("Hallo Welt") <--- die einfachste aber nicht schönste Variante, um Text im HTML einzubringen
+console.log("inhalt");
+
+<div oncick="machwas()"></div> <-- im HTML Dokument
+--> im script: 
+function machwas(){
+    console.log("ich habe etwas gemacht");
+} 
+
+
+innerText ersetzt alles was im HTML Element drin stand !!
+*/
