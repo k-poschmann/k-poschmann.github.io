@@ -11,8 +11,59 @@ html, body {
 nav {
     margin-bottom: 60px;
 }
- img:hover{
-    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.4);
+
+.europe{
+    transition: 0.5s;
+}
+
+ .europe:hover{
+    transform: rotate(5deg);
+    filter: opacity(0.5);
+ }
+
+ .africa{
+    transition: 0.5s;
+}
+
+ .africa:hover{
+    transform: rotate(5deg);
+    filter: opacity(0.5);
+ }
+
+ .northamerica{
+    transition: 0.5s;
+}
+
+ .northamerica:hover{
+    transform: rotate(5deg);
+    filter: opacity(0.5);
+ }
+
+ .southamerica{
+    transition: 0.5s;
+}
+
+ .southamerica:hover{
+    transform: rotate(5deg);
+    filter: opacity(0.5);
+ }
+
+ .asia{
+    transition: 0.5s;
+}
+
+ .asia:hover{
+    transform: rotate(5deg);
+    filter: opacity(0.5);
+ }
+
+ .australia{
+    transition: 0.5s;
+}
+
+ .australia:hover{
+    transform: rotate(5deg);
+    filter: opacity(0.5);
  }
 
 section {

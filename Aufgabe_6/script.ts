@@ -7,7 +7,7 @@ function Afrika(){
     document.querySelector(".relativetoworlds h2").innerHTML = "3,9 %";
     document.querySelector(".growthrate h2").innerHTML = "20,18 %";
     document.querySelector(".growthrateabsolute h2").innerHTML = "207,5 kg CO2";
-    document.querySelector(".chartWrapper .chart").setAttribute("style", "height:20%");
+    document.querySelector(".chartWrapper .chart").setAttribute("style", "height:" + percentAf +"%");
 
     //Prozente Afrika
     var percentAf:number = emissionAfrica2018*100/total2018;
@@ -33,7 +33,7 @@ function SuedAmerika(){
     document.querySelector(".relativetoworlds h2").innerHTML = "4,05 %";
     document.querySelector(".growthrate h2").innerHTML = "11,38 %";
     document.querySelector(".growthrateabsolute h2").innerHTML = "128,9 kg CO2";
-    document.querySelector(".chartWrapper .chart").setAttribute("style", "height:11%");
+    document.querySelector(".chartWrapper .chart").setAttribute("style", "heigh:" + percentSA + "%");
 
     //Prozente Süd Amerika
     var percentSA:number = emissionSouthAmerica2018*100/total2018;
@@ -58,7 +58,7 @@ function Europa(){
     document.querySelector(".relativetoworlds h2").innerHTML = "13,5 %";
     document.querySelector(".growthrate h2").innerHTML = "-15,2 %";
     document.querySelector(".growthrateabsolute h2").innerHTML = "-756,4 kg CO2";
-    document.querySelector(".chartWrapper .chart").setAttribute("style", "height:15%");
+    document.querySelector(".chartWrapper .chart").setAttribute("style", "height" + percentEu + "%");
 
     //Prozente Europa
     var percentEu:number = emissionEuropa2018*100/total2018;
@@ -83,7 +83,7 @@ function NordAmerika(){
     document.querySelector(".relativetoworlds h2").innerHTML = "19,3 %";
     document.querySelector(".growthrate h2").innerHTML = "-8,5 %";
     document.querySelector(".growthrateabsolute h2").innerHTML = "-564,8 kg CO2";
-    document.querySelector(".chartWrapper .chart").setAttribute("style", "height:8%");
+    document.querySelector(".chartWrapper .chart").setAttribute("style", "height:" + percentNA + "%");
 
     //Prozente Nord Amerika
     var percentNA:number = emissionNorthAmerica2018*100/total2018;
@@ -107,7 +107,7 @@ function Asien(){
     document.querySelector(".relativetoworlds h2").innerHTML = "52,3 %";
     document.querySelector(".growthrate h2").innerHTML = "25,6 %";
     document.querySelector(".growthrateabsolute h2").innerHTML = "3319,4 CO2";
-    document.querySelector(".chartWrapper .chart").setAttribute("style", "height:25%");
+    document.querySelector(".chartWrapper .chart").setAttribute("style", "height:" + percentAsia + "%");
 
     //Prozente Asien
     var percentAsia:number = emissionAsia2018*100/total2018;
@@ -132,7 +132,7 @@ function Australien(){
     document.querySelector(".relativetoworlds h2").innerHTML = "6,8 %";
     document.querySelector(".growthrate h2").innerHTML = "5,4 %";
     document.querySelector(".growthrateabsolute h2").innerHTML = "107,5 CO2";
-    document.querySelector(".chartWrapper .chart").setAttribute("style", "height:5%");
+    document.querySelector(".chartWrapper .chart").setAttribute("style", "height:" + percentAus + "%");
     
     //Prozente Australien
     var percentAus:number = emissionAustralia2018*100/total2018;
