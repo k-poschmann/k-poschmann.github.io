@@ -14,7 +14,7 @@ function Afrika(){
     document.querySelector(".relativetoworlds h2").innerHTML = percentAf.toFixed(1) + " %";
     document.querySelector(".growthrate h2").innerHTML = percentAf3.toFixed(1) + " %";
     document.querySelector(".growthrateabsolute h2").innerHTML = endAfrica.toFixed(1) + " kg CO2";
-    document.querySelector(".chartWrapper .chart").setAttribute("style", "height:" + percentAf3 + "%");
+    document.querySelector(".chartWrapper .chart").setAttribute("style", "height:" + percentAf + "%");
 
     console.log(a + Africa + b + emissionAfrica2018 + c + d + Africa + e + percentAf + f + g + Africa + h + percentAf3 + f + i + j + endAfrica + c);
 
@@ -41,7 +41,7 @@ function SuedAmerika(){
     document.querySelector(".relativetoworlds h2").innerHTML = percentSA.toFixed(1) + " %";
     document.querySelector(".growthrate h2").innerHTML = percentSA3.toFixed(1) + " %";
     document.querySelector(".growthrateabsolute h2").innerHTML = endSouthAmerica.toFixed(1) + " kg CO2";
-    document.querySelector(".chartWrapper .chart").setAttribute("style", "heigh:" + percentSA3 + "%");
+    document.querySelector(".chartWrapper .chart").setAttribute("style", "height:" + percentSA + "%");
 
 
     console.log(a + SouthAmerica + b + emissionSouthAmerica2018 + c + d + SouthAmerica + e + percentSA + f + g + SouthAmerica + h + percentSA3 + f + i + j + endSouthAmerica + c);
@@ -68,7 +68,7 @@ function Europa(){
     document.querySelector(".relativetoworlds h2").innerHTML = percentEu.toFixed(1) + " %";
     document.querySelector(".growthrate h2").innerHTML = percentEu3.toFixed(1) + " %";
     document.querySelector(".growthrateabsolute h2").innerHTML = endEurope.toFixed(1) + " kg CO2";
-    document.querySelector(".chartWrapper .chart").setAttribute("style", "height: 15%");
+    document.querySelector(".chartWrapper .chart").setAttribute("style", "height:" + percentEu + "%");
 
     console.log(a + Europe + b + emissionEuropa2018 + c + d + Europe + e + percentEu + f + g + Europe + h + percentEu3 + f + i + j + endEurope + c);
 
@@ -94,7 +94,7 @@ function NordAmerika(){
     document.querySelector(".relativetoworlds h2").innerHTML = percentNA.toFixed(1) + " %";
     document.querySelector(".growthrate h2").innerHTML = percentNa3.toFixed(1) + " %";
     document.querySelector(".growthrateabsolute h2").innerHTML = endNorthAmerica.toFixed(1) + " kg CO2";
-    document.querySelector(".chartWrapper .chart").setAttribute("style", "height: 8%");
+    document.querySelector(".chartWrapper .chart").setAttribute("style", "height:" + percentNA + "%");
 
 
     console.log(a + NorthAmerica + b + emissionNorthAmerica2018 + c + d + NorthAmerica + e + percentNA + f + g + NorthAmerica + h + percentNa3 + f + i + j + endNorthAmerica + c );
@@ -120,7 +120,7 @@ function Asien(){
     document.querySelector(".relativetoworlds h2").innerHTML = percentAsia.toFixed(1) + " %";
     document.querySelector(".growthrate h2").innerHTML = percentAsia3.toFixed(1) +" %";
     document.querySelector(".growthrateabsolute h2").innerHTML = endAsia.toFixed(1) + " CO2";
-    document.querySelector(".chartWrapper .chart").setAttribute("style", "height:" + percentAsia3 + "%");
+    document.querySelector(".chartWrapper .chart").setAttribute("style", "height:" + percentAsia + "%");
 
     console.log(a + Asia + b + emissionAsia2018 + c + d + Asia + e + percentAsia + f + g + Asia + h + percentAsia3 + f + i + j + endAsia + c) ;
 
@@ -146,7 +146,7 @@ function Australien(){
     document.querySelector(".relativetoworlds h2").innerHTML = percentAus.toFixed(1) + " %";
     document.querySelector(".growthrate h2").innerHTML = percentAus3.toFixed(1) + " %";
     document.querySelector(".growthrateabsolute h2").innerHTML = endAustralia.toFixed(1) + " CO2";
-    document.querySelector(".chartWrapper .chart").setAttribute("style", "height:" + percentAus3 + "%");
+    document.querySelector(".chartWrapper .chart").setAttribute("style", "height:" + percentAus + "%");
     
     console.log(a + Australia + b + emissionAustralia2018 + c + d + Australia + e + percentAus + f + g + Australia + h + percentAus3 + f + i + j + endAustralia + c);
 }
