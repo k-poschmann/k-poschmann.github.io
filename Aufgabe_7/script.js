@@ -53,7 +53,7 @@ function playsound() {
         index += 1;
         if (index > 11)
             index = 0;
-        console.log(mybeat[inde]);
+        console.log(mybeat[index]);
     }
 }
 /*var list:string[] = ["peter","paul","joe"]
