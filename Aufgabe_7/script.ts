@@ -64,7 +64,7 @@ function playsound(){
         MyMelody.play();
         index += 1;
         if (index>11) index=0;
-        console.log(mybeat [index]);
+        console.log(mybeat [inde]);
     }
 }
 
