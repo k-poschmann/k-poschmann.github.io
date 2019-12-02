@@ -1,0 +1,219 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-image: url(images/music-notes.jpg);  
+}
+
+#main{
+    position: absolute;
+    left:50%;
+    top: 50%;
+    transform:  translate(-50%, -50%);
+    font-family: 'Courier New', Courier, monospace;
+    color: #fff;
+    text-align: center;
+    
+}
+/*------------Button 1-----------*/
+#one{
+    width: 150px;
+    height: 150px;
+    border: 3px solid #000066;
+    border-radius: 100%;
+    background-image: linear-gradient(to Bottom right, #000080, #4d4dff);
+    float: left;
+    
+}
+
+#one:hover{
+    border: 3px solid #000066;
+    background-image: linear-gradient(to Bottom right, #4d4dff, #000080);
+}
+
+#one:active{
+    border: 3px solid #33cccc;
+}
+
+
+/*------------Button 2-----------*/
+
+#two{
+    width: 150px;
+    height: 150px;
+    border: 3px solid #000066;
+    border-radius: 100%;
+    background-image: linear-gradient(to Top right, #4d4dff, #000080);
+    float: left;
+}
+
+#two:hover{
+    border: 3px solid #000066;
+    background-image: linear-gradient(to Bottom right, #000080, #4d4dff);
+}
+
+#two:active{
+    border: 3px solid #33cccc;
+}
+
+/*------------Button 3-----------*/
+
+#three{
+    width: 150px;
+    height: 150px;
+    color: white;
+    border-radius: 100%;
+    border: 3px solid #003300;
+    background-image: linear-gradient(to Top left, #004d1a, #00b33c);
+    float: left;
+}
+
+#three:hover{
+    border: 3px solid #003300;
+    background-image: linear-gradient(to Bottom left, #00b33c, #004d1a);
+}
+
+#three:active{
+    border: 3px solid #1ac91a;
+}
+/*------------Button 4-----------*/
+
+#four{
+    width: 150px;
+    height: 150px;
+    color: white;
+    border-radius: 100%;
+    border: 3px solid #b38600;
+    background-image: linear-gradient(to Bottom left, #e67300, #ffff33);
+    float: left;
+    clear: both;
+}
+
+#four:hover{
+    border: 3px solid #b38600;
+    background-image: linear-gradient(to Bottom right, #ffff33, #e67300);
+}
+
+#four:active{
+    border: 3px solid #f0d804;
+}
+
+/*------------Button 5-----------*/
+
+#five{
+    width: 150px;
+    height: 150px;
+    color: white;
+    border-radius: 100%;
+    border: 3px solid #b38600;
+    background-image: linear-gradient(to Bottom right, #e67300, #ffff33);
+    float: left;
+}
+
+#five:hover{
+    border: 3px solid #b38600;
+    background-image: linear-gradient(to Bottom left, #ffff33, #e67300);
+}
+
+#five:active{
+    border: 3px solid #f0d804;
+}
+
+/*------------Button 6-----------*/
+
+#six{
+    width: 150px;
+    height: 150px;
+    color: white;
+    border-radius: 100%;
+    border: 3px solid #b38600;
+    background-image: linear-gradient(to Top right, #e67300, #ffff33);
+    float: left;
+}
+
+#six:hover{
+    border: 3px solid #b38600;
+    background-image: linear-gradient(to Top left, #ffff33, #e67300);
+}
+
+#six:active{
+    border: 3px solid #f0d804;
+}
+
+/*------------Button 7-----------*/
+
+#seven{
+    width: 150px;
+    height: 150px;
+    color: white;
+    border-radius: 100%;
+    border: 3px solid #b38600;
+    background-image: linear-gradient(to Top left, #e67300, #ffff33);
+    float: left;
+    clear: both;
+}
+
+#seven:hover{
+    border: 3px solid #b38600;
+    background-image: linear-gradient(to Top right, #ffff33, #e67300);
+}
+
+#seven:active{
+    border: 3px solid #f0d804;
+}
+
+/*------------Button 8-----------*/
+
+#eight{
+    width: 150px;
+    height: 150px;
+    color: white;
+    border-radius: 100%;
+    border: 3px solid #4d0000;
+    background-image: linear-gradient(to Bottom right, #660000, #ff1a1a);
+    float: left;
+}
+
+#eight:hover{
+    border: 3px solid #4d0000;
+    background-image: linear-gradient(to Bottom left, #ff1a1a, #660000);
+}
+
+#eight:active{
+    border: 3px solid #e91515;
+}
+
+/*------------Button 9-----------*/
+
+#nine{
+    width: 150px;
+    height: 150px;
+    color: white;
+    border-radius: 100%;
+    border: 3px solid #4d0000;
+    background-image: linear-gradient(to Top right, #660000, #ff1a1a);
+    float: left;
+
+}
+
+#nine:hover{
+    border: 3px solid #4d0000;
+    background-image: linear-gradient(to Top left, #ff1a1a, #660000);
+}
+
+#nine:active{
+    border: 3px solid #e91515;
+}
+
+
+/*------------Play Button-----------*/
+
+.playbutton{
+    position: absolute;
+    bottom: -25%;
+    right: 30%;
+}
+
+.playbutton:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
