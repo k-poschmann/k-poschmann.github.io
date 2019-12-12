@@ -1,0 +1,189 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    background-image: url(images/music-notes.jpg);
+}
+
+#main {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 470px;
+
+}
+
+h2{
+    text-align: center;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#one {
+    width: 150px;
+    height: 150px;
+    border: 1px solid #4da6ff;
+    border-radius: 10px;
+    background-image: linear-gradient(#1E90FF, #0066cc);
+    display: inline-block;
+    float: none;
+    margin-right: 3px;
+    cursor: pointer;
+}
+
+
+
+#two {
+    width: 150px;
+    height: 150px;
+    border: 1px solid #4da6ff;
+    border-radius: 10px;
+    background-image: linear-gradient(#1E90FF, #0066cc);
+    display: inline-block;
+    float: none;
+    margin-right: 3px;
+    cursor: pointer;
+
+}
+
+#three {
+    width: 150px;
+    height: 150px;
+    border: 1px solid #4da6ff;
+    border-radius: 10px;
+    background-image: linear-gradient(#1E90FF, #0066cc);
+    display: inline-block;
+    float: none;
+    cursor: pointer;
+
+}
+
+#four {
+    width: 150px;
+    height: 150px;
+    border: 1px solid #ff80bf;
+    border-radius: 10px;
+    background-image: linear-gradient(#ff4d94, #ff0066);
+    display: inline-block;
+    float: none;
+    margin-right: 3px;
+    margin-top: 7px;
+    cursor: pointer;
+
+}
+
+#five {
+    width: 150px;
+    height: 150px;
+    border: 1px solid #ff80bf;
+    border-radius: 10px;
+    background-image: linear-gradient(#ff4d94, #ff0066);
+    display: inline-block;
+    float: none;
+    margin-right: 3px;
+    margin-top: 7px;
+    cursor: pointer;
+
+}
+
+#six {
+    width: 150px;
+    height: 150px;
+    border: 1px solid #ff80bf;
+    border-radius: 10px;
+    background-image: linear-gradient(#ff4d94, #ff0066);
+    display: inline-block;
+    float: none;
+    margin-top: 7px;
+    cursor: pointer;
+
+}
+
+#seven {
+    width: 150px;
+    height: 150px;
+    border: 1px solid #ff80bf;
+    border-radius: 10px;
+    background-image: linear-gradient(#ff4d94, #ff0066);
+    display: inline-block;
+    float: none;
+    margin-right: 3px;
+    margin-top: 7px;
+    cursor: pointer;
+
+}
+
+#eight {
+    width: 150px;
+    height: 150px;
+    border: 1px solid #ffbb33;
+    border-radius: 10px;
+    background-image: linear-gradient(#ffb31a, #cc6600);
+    display: inline-block;
+    float: none;
+    margin-right: 3px;
+    margin-top: 7px;
+    cursor: pointer;
+
+}
+
+#nine {
+    width: 150px;
+    height: 150px;
+    border: 1px solid #ffbb33;
+    border-radius: 10px;
+    background-image: linear-gradient(#ffb31a, #cc6600);
+    display: inline-block;
+    float: none;
+    margin-top: 7px;
+    cursor: pointer;
+
+}
+
+
+/*Play, Record, Delete*/
+
+#play {
+    position: relative;
+    bottom: -10px;
+    left: 110px; 
+    color: #fff;
+    font-size: 70px; 
+    cursor: pointer;
+    padding-bottom: 10px;
+
+}
+
+#play:hover{
+    color: #1E90FF;
+}
+
+#record {
+    position: relative;
+    bottom: -10px;
+    left: 140px; 
+    color: white;
+    font-size: 70px; 
+    cursor: pointer;
+    padding-bottom: 10px;
+
+}
+
+#record:hover{
+    color: #ffb31a;
+}
+
+
+#delete {
+    position: relative;
+    bottom: -10px;
+    left: 170px; 
+    color: white;
+    font-size: 70px; 
+    cursor: pointer;
+    padding-bottom: 10px;
+
+}
+
+#delete:hover{
+    color: #ff0066;
+}
