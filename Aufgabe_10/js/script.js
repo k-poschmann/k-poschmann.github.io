@@ -11,10 +11,14 @@
  * Werte, bspw. Stelle 0 im Array todosText und Stelle 0 im Array
  * todosChecked gehören zusammen zu einem ToDo.
  */
-var todolist = {
-    text: ["Skype"],
-    status: [false]
-};
+var todolist = [{
+        text: "Skype",
+        status: false
+    },
+    {
+        text: "Hausaufgaben",
+        status: false
+    }];
 //var todosText: string[] = ["Lorem", "Ipsum"];
 //var todosChecked: boolean[] = [true    , false   , false];
 /**
@@ -73,8 +77,8 @@ function drawListToDOM() {
          * ein Wert einer Variablen benötigt (bspw. für die CSS Klasse oder für den ToDo-Text),
          * hier muss die Zeichenkette unterbrochen werden.
          */
-        todo.innerHTML = "<span class='check " + todolist.status[index] + "'><i class='fas fa-check'></i></span>"
-            + todolist.text[index] +
+        todo.innerHTML = "<span class='check " + todolist[index].status + "'><i class='fas fa-check'></i></span>"
+            + todolist[index].text +
             "<span class='trash fas fa-trash-alt'></span>"; //Div wird 'gefüllt' mit Elementen
         // Zuweisen der Event-Listener für den Check- und den Trash-Button
         todo.querySelector(".check").addEventListener("click", function () {
@@ -91,7 +95,7 @@ function drawListToDOM() {
         todosDOMElement.appendChild(todo);
     };
     // das ToDo-Array durchlaufen (iterieren) und Todo für Todo in den DOM schreiben
-    for (var index = 0; index < todolist.text.length; index++) {
+    for (var index = 0; index < todolist.length; index++) {
         _loop_1(index);
     }
     updateCounter();
@@ -100,15 +104,15 @@ function drawListToDOM() {
 function updateCounter() {
     var check = 0;
     var uncheck = 0;
-    for (var index = 0; index < todolist.status.length; index++) {
-        if (todolist.status[index] == true) {
+    for (var index = 0; index < todolist.length; index++) {
+        if (todolist[index].status == true) {
             check++;
         }
         else {
             uncheck++;
         }
     }
-    counterDOMElement.innerHTML = todolist.text.length + " in total | " + check + " Done | " + uncheck + " Open";
+    counterDOMElement.innerHTML = todolist.length + " in total | " + check + " Done | " + uncheck + " Open";
 }
 /**
  * Ein neues ToDo wird folgendermaßen erstellt:
@@ -127,8 +131,10 @@ function addTodo() {
          * Status der ToDos abbildet, für dieses ToDo (weil selbe Stelle im Array)
          * der Status "unchecked", hier false, gepusht.
          */
-        todolist.text.unshift(inputDOMElement.value);
-        todolist.status.unshift(false);
+        todolist.unshift({
+            text: inputDOMElement.value,
+            status: false
+        });
         // Jetzt wird der Text aus dem Eingabefeld gelöscht
         inputDOMElement.value = "";
         /**
@@ -156,7 +162,7 @@ function toggleCheckState(index) {
      * Alternativ könnte man hier natürlich auch andere Schreibweisen (wie sie im
      * Kurs behandelt wurden) nutzen.
      */
-    todolist.status[index] = !todolist.status[index]; //Boolean wird 'umgeswitched' von false auf true / true auf false
+    todolist[index].status = !todolist[index].status; //Boolean wird 'umgeswitched' von false auf true / true auf false
     /**
      * Die zentrale Funktion, um die Liste des ToDo-Arrays in den DOM zu rendern
      * wird wieder getriggert
@@ -173,8 +179,8 @@ function deleteTodo(index) {
      * Jetzt muss diese Stelle beider Arrays gelöscht werden,
      * das ToDo-Text-Array und das Checked/Unchecked-Array
      */
-    todolist.text.splice(index, 1); // splice = Elemente aus einer bestimmten stelle im Array entfernen | Splice nimmt zwei Werte entgegen --> index(die Werte im Array) + 1(genau diese Stelle, worauf ich klicke)
-    todolist.status.splice(index, 1);
+    todolist.splice(index, 1); // splice = Elemente aus einer bestimmten stelle im Array entfernen | Splice nimmt zwei Werte entgegen --> index(die Werte im Array) + 1(genau diese Stelle, worauf ich klicke)
+    todolist.splice(index, 1);
     /**
      * Die zentrale Funktion, um die Liste des ToDo-Arrays in den DOM zu rendern
      * wird wieder getriggert
@@ -188,8 +194,10 @@ window.addEventListener("load", function () {
         smart: true,
         action: function (i, wildcard) {
             console.log(wildcard);
-            todolist.status.unshift(false);
-            todolist.text.unshift(wildcard);
+            todolist.unshift({
+                text: (wildcard),
+                status: false
+            });
             drawListToDOM();
         }
     });
