@@ -4,7 +4,7 @@ body{
     background-size: cover;
 }
 
-#wrapper{
+main{
     width: 800px;
     height: 580px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
