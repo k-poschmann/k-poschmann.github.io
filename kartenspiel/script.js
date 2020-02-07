@@ -32,16 +32,25 @@ var cardDeck = [
     { suits: "blau", number: "7" },
     { suits: "blau", number: "8" }
 ];
-// Arrays
+/**
+ * leere Arrays werden erstellt, in denen dann die Karten
+ * hin und her geschoben werden
+ */
 var KS = [];
 var AS = [];
 var enemy = [];
 var gamer = [];
-//Variablen
+//Variablen werden zunächst deklariert und typisiert
 var kartenstapel;
 var ablagestapel;
 var gegner;
 var spieler;
+var played = false;
+/**
+ * mit dem EventListener 'load' ladet der DOM zeitgleich
+ * und nun können die bereits deklarierten Variablen
+ * Elemente aus dem DOM ansprechen.
+ */
 window.addEventListener("load", function () {
     kartenstapel = document.querySelector("#kartenstapel");
     ablagestapel = document.querySelector("#ablagestapel");
@@ -54,6 +63,11 @@ window.addEventListener("load", function () {
     createGamerCards();
     createEnemyCards();
 });
+/**
+ * Die Shuffle Funktion dient zum Mischen der Karten. Mit Hilfe
+ * der While Schleife wird jede Karte im Deck zufällig ge-
+ * mischt.
+ */
 function shuffle() {
     var decklength = cardDeck.length;
     while (decklength > 0) {
@@ -85,7 +99,6 @@ function spreadCards() {
             number: cardDeck[index].number
         });
         cardDeck.splice(index, 1);
-        console.log(AS);
     }
     storeCards();
 }
@@ -103,12 +116,14 @@ function showDeck() {
         }
         else
             (newdiv.className = "backcard");
+        newdiv.addEventListener("click", function () {
+            GamerDrawCard();
+        });
     }
     document.querySelector("#kartenstapel").appendChild(newdiv);
-    console.log(newdiv);
 }
 function createEnemyCards() {
-    for (var index = 0; index < 3; index++) {
+    for (var index = 0; index < enemy.length; index++) {
         var newdiv = document.createElement("div");
         if (enemy[index].suits == "rot") {
             newdiv.className = "backcard";
@@ -122,7 +137,6 @@ function createEnemyCards() {
         else
             (newdiv.className = "backcard");
         document.querySelector("#gegner").appendChild(newdiv);
-        console.log(newdiv);
     }
 }
 function createGamerCards() {
@@ -137,22 +151,21 @@ function createGamerCards() {
         else if (gamer[index].suits == "grün") {
             newdiv.className = "grün";
         }
-        else
-            (newdiv.className = "gelb");
+        else {
+            newdiv.className = "gelb";
+        }
         newdiv.innerHTML = "" + gamer[index].number;
         spieler.appendChild(newdiv);
         newdiv.addEventListener("click", function () {
             GamerPlaysCard(index);
         });
-        console.log(newdiv);
     };
     var newdiv;
-    for (var index = 0; index < 3; index++) {
+    for (var index = 0; index < gamer.length; index++) {
         _loop_1(index);
     }
 }
 function storeCards() {
-    console.log(ablagestapel);
     var newdiv = document.createElement("div");
     if (AS[0].suits == "rot") {
         newdiv.className = "rot";
@@ -166,9 +179,19 @@ function storeCards() {
     else {
         newdiv.className = "gelb";
     }
-    console.log(AS);
     newdiv.innerHTML = "" + AS[0].number;
-    document.querySelector("#ablagestapel").appendChild(newdiv);
+    ablagestapel.appendChild(newdiv);
+}
+/*Spielmechaniken*/
+function removeCardAS() {
+    while (ablagestapel.firstChild) {
+        ablagestapel.removeChild(ablagestapel.firstChild);
+    }
+}
+function removeCardH() {
+    while (spieler.firstChild) {
+        spieler.removeChild(spieler.firstChild);
+    }
 }
 function GamerPlaysCard(index) {
     if (gamer[index].suits == AS[0].suits) {
@@ -177,7 +200,16 @@ function GamerPlaysCard(index) {
             number: gamer[index].number
         });
         gamer.splice(index, 1);
+        removeCardAS();
+        removeCardH();
+        createGamerCards();
         storeCards();
+        played = false;
+        /*Computer spielt*/
+        EnemyPlaysCard();
+        if (played == false) {
+            EnemyDrawCard();
+        }
     }
     else if (gamer[index].number == AS[0].number) {
         AS.unshift({
@@ -185,7 +217,85 @@ function GamerPlaysCard(index) {
             number: gamer[index].number
         });
         gamer.splice(index, 1);
+        removeCardAS();
+        removeCardH();
+        createGamerCards();
         storeCards();
+        played = false;
+        checkend();
+        /*Computer spielt*/
+        EnemyPlaysCard();
+        if (played == false) {
+            EnemyDrawCard();
+        }
+    }
+}
+function GamerDrawCard() {
+    gamer.unshift({
+        suits: cardDeck[0].suits,
+        number: cardDeck[0].number
+    });
+    cardDeck.splice(0, 1);
+    removeCardH();
+    createGamerCards();
+    storeCards();
+    played = false;
+    /*Computer spielt*/
+    EnemyPlaysCard();
+    if (played == false) {
+        EnemyDrawCard();
+    }
+}
+/*
+    COMPUTER
+*/
+function removeCardEnemy() {
+    while (gegner.firstChild) {
+        gegner.removeChild(gegner.firstChild);
+    }
+}
+function EnemyPlaysCard() {
+    for (var i = 0; i < enemy.length; i++) {
+        if (enemy[i].suits == AS[0].suits) {
+            AS.unshift({
+                suits: enemy[i].suits,
+                number: enemy[i].number
+            });
+            enemy.splice(i, 1);
+            played = true;
+            break;
+        }
+        else if (enemy[i].number == AS[0].number) {
+            AS.unshift({
+                suits: enemy[i].suits,
+                number: enemy[i].number
+            });
+            enemy.splice(i, 1);
+            played = true;
+            break;
+        }
+    }
+    removeCardEnemy();
+    removeCardAS();
+    storeCards();
+    createEnemyCards();
+    checkend();
+}
+function EnemyDrawCard() {
+    enemy.unshift({
+        suits: cardDeck[0].suits,
+        number: cardDeck[0].number
+    });
+    cardDeck.splice(0, 1);
+    removeCardEnemy();
+    createEnemyCards();
+}
+function checkend() {
+    if (enemy.length == 0) {
+        alert("Der Computer hat gewonnen. Spiele erneut um zu gewinnen!");
+    }
+    if (gamer.length == 0) {
+        alert("Du hast gewonnen, spiele erneut um dem Computer eine weitere Niederlage zu bescheren!");
     }
 }
 //# sourceMappingURL=script.js.map
